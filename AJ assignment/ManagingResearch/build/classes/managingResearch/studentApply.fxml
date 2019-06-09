@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="takenCourse" prefHeight="519.0" prefWidth="766.0" style="-fx-background-color: #F7F7F7;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="managingResearch.StudentApplyController">
+   <children>
+      <Label layoutX="300.0" layoutY="103.0" prefHeight="22.0" prefWidth="167.0" text="Apply for Research" textFill="#2d353c">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="158.0" layoutY="367.0" mnemonicParsing="false" onAction="#handleApplyButtonAction" prefHeight="26.0" prefWidth="452.0" style="-fx-background-color: #539B73;" text="Apply" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="notification" layoutX="45.0" layoutY="352.0" prefHeight="25.0" prefWidth="355.0" textFill="#063901">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idField" layoutX="157.0" layoutY="167.0" prefHeight="33.0" prefWidth="452.0" promptText="write ID" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button layoutX="656.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleLogOutAction" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FF1A02;" text="Log out" textFill="#ff1a02">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="288.0" layoutY="466.0" prefHeight="25.0" prefWidth="392.0" text="Make sure that you have loged out before leaving" textFill="#2d353c">
+         <font>
+            <Font name="Bookman Old Style" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="582.0" layoutY="49.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #2d353c;" text="Home" textFill="#2d353c" />
+      <TextField fx:id="topicField" layoutX="157.0" layoutY="217.0" prefHeight="33.0" prefWidth="452.0" promptText="write topics" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="memIdField" layoutX="157.0" layoutY="269.0" prefHeight="33.0" prefWidth="452.0" promptText="write group members ID" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="supInitialField" layoutX="157.0" layoutY="320.0" prefHeight="33.0" prefWidth="452.0" promptText="write a supervisor initial" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

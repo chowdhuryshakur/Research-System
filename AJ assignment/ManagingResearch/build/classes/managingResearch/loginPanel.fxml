@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="loginPan" prefHeight="454.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="managingResearch.LoginPanelController">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="519.0" prefWidth="766.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="teacherTab" text="Teachers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #F7F7F7;">
+                     <children>
+                        <TextField fx:id="tIdField" layoutX="248.0" layoutY="229.0" prefHeight="36.0" prefWidth="260.0" promptText="id" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;" />
+                        <Label layoutX="244.0" layoutY="212.0" text=" Teacher's Initial:" textFill="#b3b3b3">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="251.0" layoutY="273.0" prefHeight="20.0" prefWidth="99.0" text="Password:" textFill="#b3b3b3">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="248.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleTLoginButtonAction" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #539B73;" text="Log in" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="276.0" layoutY="165.0" prefHeight="26.0" prefWidth="205.0" text="Login as a teacher" textFill="#2d353c">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tnotification" layoutX="114.0" layoutY="99.0" prefHeight="20.0" prefWidth="548.0" textFill="#fa2707">
+                           <font>
+                              <Font name="Arial Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="tPasswordField" layoutX="248.0" layoutY="293.0" prefHeight="34.0" prefWidth="260.0" promptText="password" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="studentTab" text="Students">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #F7F7F7;">
+                     <children>
+                        <TextField fx:id="sIdField" layoutX="253.0" layoutY="234.0" prefHeight="36.0" prefWidth="260.0" promptText="id" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;" />
+                        <Label layoutX="256.0" layoutY="213.0" text="Student ID:" textFill="#b3b3b3">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="256.0" layoutY="275.0" prefHeight="20.0" prefWidth="92.0" text="Password:" textFill="#b3b3b3">
+                           <font>
+                              <Font name="Bookman Old Style" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="253.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleSLogInButtonActionn" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #539B73;" text="Log in" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="285.0" layoutY="170.0" text="Login as a Student" textFill="#2d353c">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="snotification" layoutX="132.0" layoutY="92.0" prefHeight="20.0" prefWidth="476.0" textFill="#fa2707">
+                           <font>
+                              <Font name="Bookman Old Style Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="sPasswordField" layoutX="253.0" layoutY="300.0" prefHeight="34.0" prefWidth="260.0" promptText="password" style="-fx-background-color: #FFFFFF; -fx-border-color: #B3B3B3;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

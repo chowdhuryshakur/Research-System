@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="teacherPanel" prefHeight="519.0" prefWidth="766.0" style="-fx-background-color: #545B61;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="managingResearch.chairmanPanelController">
+   <children>
+      <Button layoutX="104.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleSeeApplicationAction" prefHeight="55.0" prefWidth="163.0" style="-fx-background-color: #545B61; -fx-border-color: #FFFFFF;" text="See Applications" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="40.0" layoutY="31.0" prefHeight="55.0" prefWidth="239.0" text="Wellcome to Seu system" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="104.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleEndorsedButtonAction" prefHeight="55.0" prefWidth="163.0" style="-fx-background-color: #545B61; -fx-border-color: #FFFFFF;" text="See Endorsed" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="645.0" layoutY="457.0" mnemonicParsing="false" onAction="#handlseLogoutButtonAction" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #545B61; -fx-border-color: #f70707;" text="log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="461.0" layoutY="462.0" prefHeight="22.0" prefWidth="198.0" text="Must log out befor leaving" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="364.0" layoutY="192.0" mnemonicParsing="false" onAction="#handleStudentAssignmentButtonAction" prefHeight="39.0" prefWidth="352.0" style="-fx-background-color: #545B61; -fx-border-color: #FFFFFF;" text="Student Assignment to Supervisor" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="364.0" layoutY="240.0" mnemonicParsing="false" onAction="#nonApplyStudentButtonAction" prefHeight="39.0" prefWidth="352.0" style="-fx-background-color: #545B61; -fx-border-color: #FFFFFF;" text="Students who haven't apply yet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="364.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleNonERSupervisorButtonAction" prefHeight="39.0" prefWidth="352.0" style="-fx-background-color: #545B61; -fx-border-color: #FFFFFF;" text="Superviser who haven't endorsed or rejected yet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
